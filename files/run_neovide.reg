@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Открыть в Neovide]
+
+"Icon"="C:\\Program Files\\Neovide\\neovide.exe"
+
+
+[HKEY_CLASSES_ROOT\*\shell\Открыть в Neovide\command]
+
+@="mshta vbscript:Execute(\"CreateObject(\"\"WScript.Shell\"\").Run \"\"powershell -ExecutionPolicy Bypass & 'C:\\Neovim\\bin\\run_neovide.ps1' '%1'\"\", 0:close\")"
+
